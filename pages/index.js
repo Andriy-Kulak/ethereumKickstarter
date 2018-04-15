@@ -5,7 +5,9 @@ import Layout from '../components/Layout';
 import { Link } from '../routes';
 
 class CampaignIndex extends Component {
+  // next.js method foor passing data into props
   static async getInitialProps() {
+    // all campaigns
     const campaigns = await factory.methods.getDeployedCampaigns().call();
 
     return { campaigns };

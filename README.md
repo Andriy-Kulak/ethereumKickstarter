@@ -6,4 +6,5 @@ Solution: To Prevent this, we have created the `Kickstarter Ethereum Project` wi
 
 Project is build with the help of:
 - Next.js (React Boilerplate library)
+- Infura for wallet provider setup
 - Ethereum course by Stephen Grider: https://www.udemy.com/ethereum-and-solidity-the-complete-developers-guide/

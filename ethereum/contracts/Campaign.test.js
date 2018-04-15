@@ -51,7 +51,9 @@ describe('Campaigns', () => {
       value: '200',
       from: accounts[1]
     });
+
     const isContributor = await campaign.methods.approvers(accounts[1]).call();
+    // confirms that user is a contributor
     assert(isContributor);
   });
 
@@ -76,6 +78,7 @@ describe('Campaigns', () => {
       });
     const request = await campaign.methods.requests(0).call();
 
+    // confirms that request description is what it should be
     assert.equal('Buy batteries', request.description);
   });
 

@@ -2,9 +2,11 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 const compiledFactory = require('./build/CampaignFactory.json');
 
+
+// Wallet Provider
 const provider = new HDWalletProvider(
-  'call glow acoustic vintage front ring trade assist shuffle mimic volume reject',
-  'https://rinkeby.infura.io/orDImgKRzwNrVCDrAk5Q'
+  'capital student drum pig coyote buyer winner water swim reflect banner chunk',
+  'https://rinkeby.infura.io/RI9gz3xS4gk2WNCBRVEF'
 );
 const web3 = new Web3(provider);
 
