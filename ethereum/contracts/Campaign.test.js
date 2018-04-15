@@ -12,18 +12,23 @@ let campaignAddress;
 let campaign;
 
 beforeEach(async () => {
+  // get list of accounts
   accounts = await web3.eth.getAccounts();
 
+  // deploy contract
   factory = await new web3.eth.Contract(JSON.parse(compiledFactory.interface))
     .deploy({ data: compiledFactory.bytecode })
     .send({ from: accounts[0], gas: '1000000' });
 
+  // create a campaign
   await factory.methods.createCampaign('100').send({
-    from: accounts[0],
+    from: accounts[0], // acounts[0] will be the manager
     gas: '1000000'
   });
 
+  // get campaign address ...destructuring gets the first element in array
   [campaignAddress] = await factory.methods.getDeployedCampaigns().call();
+  // get generated campaign based on address
   campaign = await new web3.eth.Contract(
     JSON.parse(compiledCampaign.interface),
     campaignAddress
