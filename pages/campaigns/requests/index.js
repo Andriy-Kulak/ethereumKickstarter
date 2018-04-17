@@ -5,6 +5,7 @@ import Layout from '../../../components/Layout';
 import Campaign from '../../../ethereum/campaign';
 import RequestRow from '../../../components/RequestRow';
 
+// For Showing all Requests
 class RequestIndex extends Component {
   static async getInitialProps(props) {
     const { address } = props.query;

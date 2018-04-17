@@ -5,6 +5,7 @@ import factory from '../../ethereum/factory';
 import web3 from '../../ethereum/web3';
 import { Router } from '../../routes';
 
+// For Ceating New Campaign
 class CampaignNew extends Component {
   state = {
     minimumContribution: '',
