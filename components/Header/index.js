@@ -1,23 +1,30 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
 import { Link } from '../../routes';
+// import logo from './images/ethLogo.png'
 
 export default () => {
   return (
-    <Menu style={{ marginTop: '10px' }}>
-      <Link route="/">
-        <a className="item">Ether Starter</a>
-      </Link>
-
-      <Menu.Menu position="right">
+    <div className="ak-header">
+      <div>
         <Link route="/">
-          <a className="item">Campaigns</a>
+          <img className="ak-header-img" src="/static/ethLogo.png" />
         </Link>
-
-        <Link route="/campaigns/new">
-          <a className="item">+</a>
-        </Link>
-      </Menu.Menu>
-    </Menu>
+      </div>
+      <div style={{display: 'flex'}}> 
+          <Link route="/">
+            <div className="ak-nav-item">
+              <a>Campaigns</a>
+            </div>
+          </Link>
+        
+        
+          <Link route="/campaigns/new">
+            <div className="ak-nav-item">
+              <a className="item">Create New</a>
+            </div>
+          </Link>
+        
+      </div>
+    </div>
   );
 };

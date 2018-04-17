@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import { Link } from '../routes';
 
 class CampaignIndex extends Component {
-  // next.js method foor passing data into props
+  // next.js native method foor passing data into props
   static async getInitialProps() {
     // all campaigns
     const campaigns = await factory.methods.getDeployedCampaigns().call();
@@ -33,7 +33,7 @@ class CampaignIndex extends Component {
     return (
       <Layout>
         <div>
-          <h3>Open Campaigns</h3>
+          <h3>Current Eth Campaigns</h3>
 
           <Link route="/campaigns/new">
             <a>

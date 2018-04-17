@@ -15,6 +15,7 @@
     "ganache-cli": "^6.0.3",
     "mocha": "^4.1.0",
     "next": "^4.1.4",
+    "next-images": "^0.10.1",
     "next-routes": "^1.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

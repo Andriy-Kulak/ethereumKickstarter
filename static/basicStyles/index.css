@@ -1,0 +1,34 @@
+.ak-layout {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ak-nav-item {
+  border: 1px solid #b3d9ff;
+  margin: 0 auto;
+  padding: 35px;
+}
+
+.ak-header-img {
+  width: 200px;
+  height: 70px;
+  margin-top: 10px;
+}
+
+.ak-header-img:hover {
+  cursor: pointer;
+}
+
+.ak-nav-item:hover {
+  background-color: #b3d9ff;
+  cursor: pointer;
+}
+
+.ak-header {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #b3d9ff;
+}
